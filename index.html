@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Latihan</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="bungkus">
+            <header></header>
+            <div class="menu">
+                <div class="isimenu">
+                    <ul>
+                        <li>Beranda</li>
+                        <li>Produk</li>
+                        <li>Kategori</li>
+                        <li>Cara Pesan</li>
+                        <li>Pembayaran</li>
+                        <li>Tentang Kami</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="kiri">
+                    <div class="isikiri">
+                        <div class="judul"></div>
+                    </div>
+                    <div class="isikiri">
+                        <div class="judul"></div>
+                    </div>
+                    <div class="isikiri">
+                        <div class="judul"></div>
+                    </div>
+                </div>
+                <div class="kanan">
+                    <?php
+if(isset($_GET['modul'])){
+    $modul=$_GET['modu'];
+    if($modul=='produk'){
+    echo"halaman produk";
+}
+else if($modul=='kategori'){
+    echo "halaman kategori";
+}
+else if($modul=='Cara_Pesan'){
+    echo "halaman Cara Pesan";
+}else if($modul=='Pembayaran'){
+    echo "halaman pembayaran";
+}else if($modul=='Tentang_Kami'){
+    echo "tentang kami";
+}
+
+}
+
+?>
+                </div>
+            </div>
+            <footer>
+                <div class="isifooter">
+                    <div class="tigabagian"></div>
+                    <div class="tigabagian"></div>
+                    <div class="tigabagian"></div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
